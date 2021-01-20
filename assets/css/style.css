@@ -14,6 +14,10 @@
     background-color: #f4f4f4;
 }
 
+.bg-color-work-history {
+    background-color: #9b59b6;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -30,7 +34,7 @@
     background-color: #525252;
 }
 
-/* ----------------- Special paddings/margins/text */
+/* --------------------------------------- Special paddings/margins/text */
 
 h1,
 h2,
@@ -63,6 +67,7 @@ h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -159,7 +164,7 @@ header {
     letter-spacing: 2px;
 }
 
-/* ------------------------------------- Hover.css */
+/* --------------------------------------- Hover.css */
 
 /* Look with Google Chrome Inspector where background color is applied */
 .hvr-sweep-to-bottom:before {
@@ -167,7 +172,7 @@ header {
     height: 120px;
 }
 
-/* ---------------------------------------- Footer */
+/* --------------------------------------- Footer */
 
 footer {
     background-color: #525252;
@@ -220,7 +225,7 @@ footer {
     padding: 20px;
 }
 
-/* --------------------------------- Three Reasons */
+/* --------------------------------------- Three Reasons */
 
 .three-reasons-icon {
     font-size: 26px;
@@ -231,7 +236,7 @@ footer {
     margin-bottom: 15px;
 }
 
-/* --------------------------------- Personal Info */
+/* --------------------------------------- Personal Info */
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -266,7 +271,7 @@ s
     width: 60%;
 }
 
-/* ---------------------------------------- Skills */
+/* --------------------------------------- Skills */
 
 .progress {
     position: relative;
@@ -285,4 +290,53 @@ s
 
 .progress-section {
     margin: 40px 20px;
+}
+
+/* --------------------------------------- Work History */
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Note how data-prefix is applied here */
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+
+.history-items {
+    margin-bottom: 30px;
 }
